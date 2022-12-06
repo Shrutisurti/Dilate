@@ -726,8 +726,66 @@
 }
 .blog-feed .h3{
   color: #fff !important;
- font-size: 20px;
+ font-size: 16px;
 }
+.item-thumb .video-img{
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+.overlay-box{
+  position: relative;
+}
+.img-overlay-text{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #151515;
+}
+.overlay-box:hover .img-overlay-text {
+  opacity: 0.8;
+}
+
+.overlay-text  {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+ font-weight: bold;
+ top: 10%;
+ left: 5%;
+}
+.overlay-small-text{
+  color: white;
+  font-size: 12px;
+  position: absolute;
+ font-weight: bold;
+ top: 10%;
+ left: 5%;
+}
+.overlay-box img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  /* margin-bottom: 20px; */
+  filter: contrast(0.8);
+}
+.overlay-box .dive-img{
+  margin-bottom: 20px;
+}
+.blog-box .blog-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  filter: contrast(0.8);
+}
+
 .blog-feed .item-info .h4{
   margin-top: 20px;
   color:#fff;
@@ -741,7 +799,6 @@
 }
 .business-section{
   background: transparent linear-gradient(270deg, #91C03E 0%, #B5C734 100%) 0% 0% no-repeat padding-box;
-  text-align: center;
   padding: 0px;
   position: relative;
 }
@@ -749,10 +806,10 @@
   padding: 40px 0px;
  }
  .business-section .business-heading .business-caption {
-  font-size: 62px;
   color: #000;
   width: 100%;
-  
+  justify-content: center;
+  font-size: 50px;
 }
 .business-section .business-heading .business-caption em{
   color: white;
@@ -760,5 +817,126 @@
     font-style: normal;
     font-weight: bold;
 }
+.business-caption .blackbtn{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px 0;
+}
 
+.inverted-7 {
+  margin: 15px;
+  /* display: flex; */
+  /* justify-content: center; */
+  border-radius: 30px;
+  border: 2px solid #000;
+  padding: 12px 30px;
+   background: conic-gradient(#fff 0 90deg, #fff0 0) bottom left,
+    conic-gradient(#84ba3f 0 90deg, #fff0 0) bottom left,
+    conic-gradient(from 90deg, #fff 0 90deg, #fff0 0) top left,
+    conic-gradient(from 90deg, #84ba3f 0 90deg, #fff0 0) top left,
+    conic-gradient(from 180deg, #fff 0 90deg, #fff0 0) top right,
+    conic-gradient(from 180deg, #84ba3f 0 90deg, #fff0 0) top right,
+    conic-gradient(from -90deg, #fff 0 90deg, #fff0 0) bottom right,
+    conic-gradient(from -90deg, #84ba3f 0 90deg, #fff0 0) bottom right, #000;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  background-size: 202% 202%;
+  transition: 0.5s;
+}
+.inverted-7:hover {
+  background-position: center;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+}
+.btn-box1 {
+  text-decoration: none !important;
+  color: #84ba3f !important;
+  font-size: 18px;
+  font-weight: 600;
+}
+footer{
+  padding: 50px 0px;
+}
+.footer .footer-heading {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.footer-heading h2{
+  margin: 0px;
+  font-size: 20px;
+}
+.email-contain{
+  justify-content: center;
+  /* align-items: center; */
+  display: flex;
+  margin-top: 10px
+}
+.input-group{
+  width: 25% !important;
+}
+.input-group .form-control{
+  height: 32px;
+}
+.input-group .btn{
+  background-color: #A4C53A !important;
+  color: #151515 !important;
+    font-weight: bold;
+    padding: 0 13px !important;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-size: 13px;
+    height: 32px;
+}
+.footer-col .h2{
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.footer-col .address a{
+  text-decoration: none;
+  color: #A4C53A;
+  font-weight: bold;
+}
+.footer-col .footer-menu ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-menu-container .footer-menu a{
+  text-decoration: none;
+  color: #151515;
+}
+ .footer-menu li:before {
+  content:  "\f054"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  margin-right: 8px;
+  /* margin-left: -1.3em;  */
+  /* same as padding-left set on li */
+  /* width: 1.3em; */
+   /* same as padding-left set on li */
+  color: #ABBC3B;
+  font-weight: bold;
+}
+.footer-logo{
+  width: 50%;
+}
+.copy-right{
+  font-size: 13px;
+ 
+}
+.heart{
+  color: #A4C53A;
+  margin: 0px 5px;
+}
+
+.footer-right  .privacy a{
+  color: #CFCFCF;
+  text-decoration: none;
+  font-size: 13px;
+}
+.footer-right .social a{
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ABBC3B;
+}
 
