@@ -3,9 +3,9 @@
   padding: 0px;
   box-sizing: border-box;
 }
-body {
+/* body {
   overflow-x: hidden;
-}
+} */
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
@@ -293,7 +293,7 @@ body {
   height: 2px;
   left: 0;
   bottom: 0;
-  top: 30px;
+  top: 25px;
   background-color: #000;
   transition: 0.5s ease;
 }
@@ -304,13 +304,16 @@ body {
   color: #000;
   text-decoration: none;
 }
-.green-border {
-  margin-top: 40px;
-  height: 20px;
-  background-color: #84ba3f;
+.agency-section:before {
+  content: " ";
+  width: 100%;
+  height: 25px;
+  background: transparent linear-gradient(90deg, #91C03E 0%, #B5C734 100%) 0% 0% no-repeat padding-box;
+  display: block;
 }
 .agency-section {
   background-color: #151515;
+  margin-top: 50px;
 }
 .agency-content {
   padding: 15% 0px;
@@ -585,12 +588,12 @@ body {
 .img-portfolio-first {
   padding: 50px 0px;
 }
+
 .img-section .team-img{
   max-width: 90%;
   width: 100%;
   height: auto;
-  
-}
+  }
 .img-caption{
   color: #C3C3C3;
   font-weight: bold;
@@ -599,7 +602,6 @@ body {
 }
 .img-caption span {
   color:#84ba3f;
-
 }
 .img-caption a{
   text-decoration: none;
@@ -607,15 +609,156 @@ body {
 .image-content .caption{
   font-weight: bold;
   color: #151515;
+  margin: 1rem 0px;
 }
 .image-content .h2 {
-  font-size: 58px;
+  font-size: 49px;
   font-weight: bold;
-  color: #A4C53A;;
+  color: #A4C53A;
+  margin: 40px 0px;
 }
-.image-content .sub-content{
+.image-content .sub-content {
   color:#151515;
 }
-.img-portfolio-second .image-content {
+.img-portfolio-first .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.img-portfolio-first .right .image-content {
+  padding-left: 0;
   padding-right: 25%;
 }
+.case-anchor .disable-text{
+  color: #84ba3f;
+  text-decoration: line-through;
+}
+.partner-section{
+  background-color: #151515;
+  
+}
+.partner-section .partner-logo{
+  padding: 25px 0px;
+  vertical-align: middle;
+  text-align: center;
+}
+.partner-section img{
+  max-width: 50%;
+  width: 100%;
+}
+.main-information {
+  padding-top: 40px;
+}
+.main-information .h2{
+  font-size: 70px;
+  background: transparent linear-gradient(271deg, #91C03E 0%, #B5C734 100%) 0% 0% no-repeat padding-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  min-height: 80px;
+}
+.main-information .sub-text {
+  font-weight: bold;
+  font-family: minion-pro;
+  font-size: 30px;
+}
+.rating-information{
+  margin-top: 20px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.five-star-rating{
+  padding: 5px 13px;
+  color: #fff;
+  background: transparent linear-gradient(90deg, #91C03E 0%, #B5C734 100%) 0% 0% no-repeat padding-box;
+  border-radius: 24px;
+  font-weight: bold;
+}
+.five-star-rating .white-star{
+  position: relative;
+  top: -3px;
+}
+.google-client-rating{
+  text-decoration: none;
+  color: #A4C53A;
+}
+.google-client-rating:hover{
+  color: #A4C53A;
+}
+.item-head{
+  margin:30px 0px;
+}
+.item-name {
+  text-align: center;
+  
+}
+.item-name a{
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+.item-name img {
+  width: 100px !important;
+  margin: auto;
+}
+.item-content{
+  color: #151515;
+  font-size: 13px;
+  margin: 0px 10px;
+  line-height: 22px;
+}
+.blog-feed{
+  background-color: #151515;
+  padding: 70px 0px;
+}
+.blog-feed .h2{
+  font-size: 50px;
+  background: transparent linear-gradient(271deg, #91C03E 0%, #B5C734 100%) 0% 0% no-repeat padding-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  min-height: 60px;
+}
+.blog-feed .sub-text{
+  color: #fff;
+  font-family: minion-pro;
+  font-size: 25px;
+  font-weight: bold;
+}
+.blog-feed .h3{
+  color: #fff !important;
+ font-size: 20px;
+}
+.blog-feed .item-info .h4{
+  margin-top: 20px;
+  color:#fff;
+  font-family: minion-pro, serif;
+}
+.blog-feed .item-info p{
+  color: #fff;
+}
+.subscribe-box img{
+  width: 24%;
+}
+.business-section{
+  background: transparent linear-gradient(270deg, #91C03E 0%, #B5C734 100%) 0% 0% no-repeat padding-box;
+  text-align: center;
+  padding: 0px;
+  position: relative;
+}
+ .business-heading{
+  padding: 40px 0px;
+ }
+ .business-section .business-heading .business-caption {
+  font-size: 62px;
+  color: #000;
+  width: 100%;
+  
+}
+.business-section .business-heading .business-caption em{
+  color: white;
+    font-family: minion-pro, serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+
